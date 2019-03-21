@@ -133,6 +133,7 @@ class Todo extends React.Component {
           onValueChange={this.handleInputChange}
         />
       <div className="todo-app__content todo-app__contentResult">
+        {todos.length > 0  ?
         <div className="todo-app__column-dispay">
             <FilterLinks
                 todosCount={todos.length}
@@ -145,6 +146,7 @@ class Todo extends React.Component {
               onCheckboxClick={this.handleCheckboxClick}
             />
           </div>
+            : null }
          </div>
         </div>
     );

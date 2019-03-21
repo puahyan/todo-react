@@ -203,9 +203,18 @@ body {
                     }
                     .todo-app__form-group{
                         margin-bottom: 0;
+                        height: auto;
+                        float: left;
+                        overflow-wrap: break-word;
+                        overflow: hidden;
+                        text-align:justify;
+                        clear: both;
+                        word-break: break-all;
+                        .custom-control{
+                            padding-left:2rem;
+                        }
                     }
                     color: black;
-                    height:70px;
                     border-bottom: 1px solid #eaeaea;
                 }
             }
