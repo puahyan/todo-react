@@ -1,17 +1,20 @@
 @import "../assets/scss/variable";
 @import "../assets/scss/mixin";
 
+$primary-color : #4292e7;
+$white-color: #fff;
+$font-family: "Muli", sans-serif;
 body {
-    background: #4292e7;
+    background: $primary-color;
 }
 
 .todo-app{
-    background: #4292e7;
+    background: $primary-color;
     .todo-app__row {
         height: 100vh !important;
         .todo-app__column{
-            color: #fff;
-            font-family: "Muli", sans-serif;
+            color: $white-color;
+            font-family: $font-family;
             text-align: center;
             top: 100px;
             position: relative;
@@ -29,8 +32,8 @@ body {
                 width: 100%;
             }
             .todo-app__content{
-                color: #fff;
-                font-family: "Muli", sans-serif;
+                color: $white-color;
+                font-family: $font-family;
                 text-align: center;
                 width: 100%;
                 margin: auto;
@@ -51,7 +54,7 @@ body {
                     }
                 }
                 .todo-app__button {
-                    background: #4292e7;
+                    background:$primary-color;
                     border: 3px solid #71aff1;
                     font-size: 1.3em;
                     font-weight: 800;
@@ -67,7 +70,7 @@ body {
         }
     }
     .todo-app__column-dispay{
-        background: #fff;
+        background: $white-color;
         overflow: auto;
         display: block;
         width: 100%;
@@ -288,7 +291,7 @@ body {
     display: block;
     padding: 0.75rem 1.25rem;
     margin-bottom: -1px;
-    background-color: #fff;
+    background-color: $white-color;
     border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
@@ -310,12 +313,12 @@ label {
     z-index: -1;
     opacity: 0;
     &:checked ~ .custom-control-label::before {
-        color: #fff;
+        color: #fff$white-color;
         border-color: #007bff;
         background-color: #007bff;
     }
     &:not(:disabled):active ~ .custom-control-label::before {
-        color: #fff;
+        color: $white-color;
         background-color: #b3d7ff;
         border-color: #b3d7ff;
     }
@@ -352,7 +355,7 @@ label {
         height: 1.8rem;
         pointer-events: none;
         content: "";
-        background-color: #fff;
+        background-color: $white-color;
         border: #adb5bd solid 1px;
     }
     &:after {
