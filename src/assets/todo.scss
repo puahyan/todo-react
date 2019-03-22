@@ -4,6 +4,11 @@
 $primary-color : #4292e7;
 $white-color: #fff;
 $font-family: "Muli", sans-serif;
+
+$max-width: max-width;
+$min-width: min-width;
+$target-width: 900px;
+
 body {
     background: $primary-color;
 }
@@ -84,7 +89,7 @@ body {
         border: 1px solid #ced4da;
         border-radius: 0.25rem;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-        @media only screen and (max-width: 900px) {
+        @media only screen and ($max-width : $target-width) {
             .mobileView{
                 display: inherit;
             }
@@ -96,7 +101,7 @@ body {
                 display:none;
             }
         }
-        @media only screen and (min-width: 900px) {
+        @media only screen and ($min-width : $target-width) {
             .mobileView{
                 display:none;
             }
@@ -144,7 +149,7 @@ body {
                 height: 15px;
                 top: 10px;
             }
-            @media only screen and (max-width: 900px) {
+            @media only screen and ($max-width : $target-width) {
                 .indicator{
                     left: 10px;
                     top: 25px;
@@ -313,7 +318,7 @@ label {
     z-index: -1;
     opacity: 0;
     &:checked ~ .custom-control-label::before {
-        color: #fff$white-color;
+        color: $white-color;
         border-color: #007bff;
         background-color: #007bff;
     }
