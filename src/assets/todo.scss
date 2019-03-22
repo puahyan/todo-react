@@ -8,6 +8,7 @@ $font-family: "Muli", sans-serif;
 $max-width: max-width;
 $min-width: min-width;
 $target-width: 900px;
+$target-middle-width: 1100px;
 
 body {
     background: $primary-color;
@@ -31,6 +32,14 @@ body {
             align-items: center !important;
             flex: 0 0 50%;
             max-width: 50%;
+            @media only screen and ($max-width : $target-width) {
+                flex: 0 0 80%;
+                max-width: 80%;
+            }
+            @media only screen and ($max-width : $target-middle-width) {
+                flex: 0 0 70%;
+                max-width: 70%;
+            }
             .todo-app__contentResult{
                 position: absolute;
                 top: 400px;
