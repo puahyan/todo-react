@@ -18,7 +18,7 @@ let TodoItem = (props) => {
                 <span className="custom-control-label" style={{
                   textDecoration: todoItem.completed ? 'line-through' : 'none'
                 }}>
-                  {todoItem.todo}</span>
+                  {todoItem._title}</span>
               </label>
           </div>
           <div title="Remove">

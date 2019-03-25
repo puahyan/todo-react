@@ -5,9 +5,6 @@ let ACTIVE = constants.ACTIVE;
 let COMPLETED = constants.COMPLETED;
 
 class FilterLinks extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     render(){
         return (

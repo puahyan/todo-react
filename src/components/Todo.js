@@ -25,7 +25,7 @@ class Todo extends React.Component {
     }
     this.setState(function (prevState) {
         let todoItem = {
-          todo: prevState.inputTaskValue,
+          _title: prevState.inputTaskValue,
           id: Date.now().toString(),
           completed: false
         };
@@ -86,7 +86,7 @@ class Todo extends React.Component {
 
       todos = (
         todos.slice(0, index).concat([{
-            todo: todos[index].todo,
+            _title: todos[index]._title,
             id: todos[index].id,
             completed: !todos[index].completed
           }]).concat(todos.slice(index + 1))
